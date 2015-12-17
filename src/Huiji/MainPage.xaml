@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mvvm="using:MVVMSidekick.Views"
     xmlns:vm="using:Huiji.ViewModels"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Loaded="MainPage_OnLoaded">
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
         <x:String x:Key="AppName">My Application</x:String>
@@ -15,6 +15,6 @@
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}">
         <TextBlock x:Name="pageTitle" Grid.Column="1" Margin="100" Text="{Binding Title}" />
-
+        <WebView x:Name="webView"></WebView>
     </Grid>
 </mvvm:MVVMPage>
